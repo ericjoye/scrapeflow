@@ -1,0 +1,31 @@
+{
+  "business": "scrapeflow",
+  "product_type": "chrome_extension",
+  "maturity": "v1.0_built",
+  "distribution": "chrome_web_store",
+  "pricing": {
+    "free": { "rows_per_month": 50, "csv": true, "json": false, "ai_detection": false },
+    "pro": { "price_usd": 9, "period": "month", "rows": "unlimited", "csv": true, "json": true, "ai_detection": true },
+    "team": { "price_usd": 19, "period": "month", "rows": "unlimited", "csv": true, "json": true, "ai_detection": true, "scheduling": true, "priority_support": true }
+  },
+  "metrics": {
+    "installs": 0,
+    "active_users": 0,
+    "free_users": 0,
+    "pro_users": 0,
+    "team_users": 0,
+    "mrr": 0,
+    "arr": 0,
+    "conversion_rate": null,
+    "churn_rate": null,
+    "cac": null,
+    "ltv": null
+  },
+  "costs": {
+    "cws_developer_fee": 5,
+    "hosting": 0,
+    "api_costs": 0,
+    "model_costs_estimate": 0
+  },
+  "last_updated": "2026-06-18"
+}

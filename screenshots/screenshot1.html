@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#0a0a0f;color:#e4e4e7;margin:0;padding:20px;width:400px}
+.header{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.logo{width:32px;height:32px;background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#000}
+.title{font-size:1.1rem;font-weight:700;color:#f59e0b}
+.url-bar{background:#18181b;border:1px solid #27272a;border-radius:6px;padding:8px 12px;font-size:0.8rem;color:#a1a1aa;margin-bottom:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.stats{display:flex;gap:12px;margin-bottom:12px}
+.stat{background:#18181b;border-radius:6px;padding:8px 12px;flex:1;text-align:center}
+.stat-num{font-size:1.2rem;font-weight:700;color:#f59e0b}
+.stat-label{font-size:0.7rem;color:#a1a1aa}
+.btn{display:block;width:100%;padding:10px;margin:6px 0;border:none;border-radius:6px;background:#f59e0b;color:#000;font-weight:600;cursor:pointer;text-align:center;font-size:0.85rem}
+.btn-outline{background:transparent;border:1px solid #f59e0b;color:#f59e0b}
+.table{background:#18181b;border-radius:6px;overflow:hidden;font-size:0.75rem}
+.row{display:flex;padding:6px 12px;border-bottom:1px solid #27272a}
+.row:last-child{border-bottom:none}
+.row.header{font-weight:600;color:#f59e0b;background:#1a1a2e}
+.cell{flex:1}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="logo">S</div>
+<div class="title">ScrapeFlow</div>
+</div>
+<div class="url-bar">https://example-shop.com/products?page=1&sort=price</div>
+<div class="stats">
+<div class="stat"><div class="stat-num">23</div><div class="stat-label">Products Found</div></div>
+<div class="stat"><div class="stat-num">5</div><div class="stat-label">Pages</div></div>
+</div>
+<div style="background:#18181b;border-radius:6px;padding:8px;margin-bottom:12px">
+<div style="font-size:0.75rem;color:#a1a1aa;margin-bottom:6px">Detected fields:</div>
+<div style="font-size:0.8rem">✓ Product Name · ✓ Price · ✓ Rating · ✓ Image URL</div>
+</div>
+<div class="table">
+<div class="row header"><div class="cell">Product</div><div class="cell">Price</div><div class="cell">★</div></div>
+<div class="row"><div class="cell">Widget A</div><div class="cell">$29.99</div><div class="cell">4.5</div></div>
+<div class="row"><div class="cell">Gadget Pro</div><div class="cell">$49.99</div><div class="cell">4.2</div></div>
+<div class="row"><div class="cell">Tool Lite</div><div class="cell">$19.99</div><div class="cell">4.8</div></div>
+</div>
+<button class="btn">Export CSV</button>
+<button class="btn btn-outline">Export JSON</button>
+</body>
+</html>
